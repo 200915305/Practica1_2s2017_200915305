@@ -81,10 +81,14 @@ namespace ClienteServidor
                 string responseFromServer = reader.ReadToEnd();
                 // Display the content.
                 //MessageBox.Show(responseFromServer);
+                Console.WriteLine(responseFromServer);
                 string[] words = responseFromServer.Split(',');
-                textBox1.Text = words[0];
+                textBox1.Text = words[3];
                 textBox2.Text = words[1];
-                textBox3.Text = words[2];
+                textBox3.Text = words[4];
+                textBox4.Text = words[0];
+                textBox5.Text = words[2];
+                richTextBox1.Text = words[5];
                 // Clean up the streams.
                 reader.Close();
                 dataStream.Close();
@@ -95,6 +99,11 @@ namespace ClienteServidor
                 MessageBox.Show("ERROR al enviar el XML");
             }
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+         
         }
 
 

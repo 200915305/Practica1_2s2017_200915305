@@ -1,0 +1,14 @@
+digraph Lista{
+label = "Lista"
+
+	Node0[label = "192.168.0.16  ,  carne"];
+	Node1[label = "192.168.0.9  ,  carne"];
+	Node2[label = "192.168.0.33  ,  carne"];
+	Node3[label = "192.168.0.8  ,  carne"];
+	Node4[label = "192.168.0.5  ,  200915305"];
+
+	Node0 -> Node1;
+	Node1 -> Node2;
+	Node2 -> Node3;
+	Node3 -> Node4;
+}
